@@ -201,7 +201,7 @@ public class PlayerController : MonoBehaviour {
 
     #endregion
 
-    #region ▼ 壁ジャンプらしくジャンプ
+    #region ▼ 壁ジャンプ処理
 
     IEnumerator ClimbJump()
     {

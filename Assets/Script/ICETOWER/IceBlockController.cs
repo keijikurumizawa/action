@@ -30,7 +30,7 @@ public class IceBlockController : MonoBehaviour {
     #endregion
 
     void Start () {
-        StartCoroutine("SetIceBlock");
+        //StartCoroutine("SetIceBlock");
         _setNum = 0;
     }
 	
@@ -42,7 +42,7 @@ public class IceBlockController : MonoBehaviour {
     {
         while (PlayerController._playerActiveFlag && _setNum < 30)
         { 
-            rand = Random.Range(-4, 4);
+            rand = Random.Range(-3, 4);
             GameObject _iceblock = (GameObject)Instantiate(_IceBlockPrefab, new Vector3(rand * _defaultPosition, 900.0f, 0.0f), _defaultQuaternion);
             _iceblock.name = _IceBlockPrefab.name;
             _iceblock.transform.SetParent(_IcePool, false);
